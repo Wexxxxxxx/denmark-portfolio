@@ -5,9 +5,6 @@ import Img3 from "../assets/img/varsity6.jpg";
 import Img4 from "../assets/img/varsity7.jpg";
 import Img5 from "../assets/img/varsity8.jpg";
 import Img6 from "../assets/img/varsity1.jpg";
-import Img7 from "../assets/img/varsity2.jpg";
-import Img8 from "../assets/img/varsity3.jpg";
-import Img10 from "../assets/img/varsity11.jpg";
 
 const Player = () => {
   return (
