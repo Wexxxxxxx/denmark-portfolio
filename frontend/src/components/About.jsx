@@ -10,6 +10,7 @@ import logo5 from "../assets/img/java.png";
 import logo6 from "../assets/img/jsx.png";
 import logo7 from "../assets/img/tailwind.png";
 import Pdf from "../assets/Denmark.pdf";
+import resume from "../assets/Resume.pdf"
 import { Link } from "react-router-dom";
 
 
@@ -57,7 +58,7 @@ const About = () => {
           <div className="flex flex-col items-center justify-center space-y-4 h-44">
             <p className="">Resume</p>
             <a
-              href={Pdf}
+              href={resume}
               target="_blank"
               rel="reopenner"
               className="py-3 px-4  inline-flex justify-center items-center rounded-3xl border border-transparent font-bold bg-red-600 text-white hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-red-800 focus:ring-offset-2 transition-all text-sm"
