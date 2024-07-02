@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import img from "../assets/img/myprofile3.png";
 import img2 from "../assets/img/resume2.png";
+import resume1 from "../assets/img/Resume.jpg"
 import img1 from "../assets/img/myprofile1.png";
 import logo1 from "../assets/img/js4.png";
 import logo2 from "../assets/img/css1.png";
@@ -51,7 +52,7 @@ const About = () => {
         </div>
         <div className="flex flex-col h-[30rem] text-center text-white font-semi text-2xl md:text-md  bg-zinc-800 rounded-3xl md:w-[220px] xl:w-[300px] shadow-lg shadow-red-600 hover:shadow-red-500">
           <img
-            src={img2}
+            src={resume1}
             alt="img3"
             className="w-[320px] shadow-lg rounded-b-[45%] rounded-t-[7%] bg-[url('/bg17.png')]  bg-no-repeat bg-cover  h-[60%] object-cover"
           />
