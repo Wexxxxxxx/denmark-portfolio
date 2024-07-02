@@ -4,7 +4,7 @@ import Img2 from "../assets/img/varsity5.jpg";
 import Img3 from "../assets/img/varsity6.jpg";
 import Img4 from "../assets/img/varsity7.jpg";
 import Img5 from "../assets/img/varsity8.jpg";
-import Img6 from "../assets/img/varsity1.jpg";
+import Img6 from "../assets/img/Varsity1.jpg";
 
 const Player = () => {
   return (
