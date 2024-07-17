@@ -15,6 +15,17 @@ import Philore2 from "../assets/img/PhiloreAbout.png"
 import Philore3 from "../assets/img/PhiloreMission.png"
 import Philore4 from "../assets/img/PhilorePlace.png"
 import Philore5 from "../assets/img/PhiloreContact.png"
+import Pathed1 from "../assets/img/pathed1.png"
+import Pathed2 from "../assets/img/pathed2.png"
+import Pathed3 from "../assets/img/pathed3.png"
+import Pathed4 from "../assets/img/pathed4.png"
+import Pathed5 from "../assets/img/pathed5.png"
+import Pathed6 from "../assets/img/pathed6.png"
+import Philorefigma1 from "../assets/img/philorefigma1.png"
+import Philorefigma2 from "../assets/img/philorefigma2.png"
+import Philorefigma3 from "../assets/img/philorefigma3.png"
+import Philorefigma4 from "../assets/img/philorefigma4.png"
+import Philorefigma5 from "../assets/img/philorefigma5.png"
 
 const Portfolio = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -23,23 +34,37 @@ const Portfolio = () => {
     {
       title: "E-learning Web Based Project",
       description:
-        "A E-learning Web Based Project for kids to learn how to read and visualize ",
+        "A E-learning Web Based Project for kids to learn how to read and visualize using React, Node.js, TailwindCSS, MongoDB for database. ",
       images: [Home, Menu, Contact, Login, Register],
       thumbnail: Home, // Thumbnail image for the project card
     },
     {
       title: "PHILORE Resume App Form",
       description:
-        "A resume app created to demonstrate my skills in form handling and PDF generation.",
+        "A resume app created to demonstrate my skills in form handling and PDF generation using React and Tailwind CSS.",
       images: [Form, Details, Education, Skills, Resume],
       thumbnail: Form, // Thumbnail image for the project card
     },
     {
       title: "Re Designing PHILORE Website",
       description:
-        "Example layout for Re-Designing a PHILORE Website",
+        "Example layout for Re-Designing a PHILORE Website using figma",
       images: [Philore1, Philore2, Philore3, Philore4, Philore5],
       thumbnail: Philore1, // Thumbnail image for the project card
+    },
+    {
+      title: "CREATING A LAYOUT FOR DATABASE DESIGN.",
+      description:
+        "Example layout for PHILORE pathed Website using figma",
+      images: [Pathed1, Pathed2, Pathed3, Pathed4, Pathed5, Pathed6],
+      thumbnail: Pathed1,
+    },
+    {
+      title: "CREATING A LAYOUT FOR ADMIN DESIGN.",
+      description:
+        "Example layout for PHILORE Website using figma",
+      images: [Philorefigma1, Philorefigma2, Philorefigma3, Philorefigma4, Philorefigma5],
+      thumbnail: Philorefigma1,
     },
     // Add more projects as needed
   ];
