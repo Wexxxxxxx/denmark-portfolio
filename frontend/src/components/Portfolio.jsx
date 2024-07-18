@@ -10,22 +10,22 @@ import Education from "../assets/img/ResumeEducational.png";
 import Form from "../assets/img/ResumeHome.png";
 import Skills from "../assets/img/ResumeDetails.png";
 import Resume from "../assets/img/ResumePDF.png";
-import Philore1 from "../assets/img/PhiloreHome.png"
-import Philore2 from "../assets/img/PhiloreAbout.png"
-import Philore3 from "../assets/img/PhiloreMission.png"
-import Philore4 from "../assets/img/PhilorePlace.png"
-import Philore5 from "../assets/img/PhiloreContact.png"
-import Pathed1 from "../assets/img/pathed1.png"
-import Pathed2 from "../assets/img/pathed2.png"
-import Pathed3 from "../assets/img/pathed3.png"
-import Pathed4 from "../assets/img/pathed4.png"
-import Pathed5 from "../assets/img/pathed5.png"
-import Pathed6 from "../assets/img/pathed6.png"
-import Philorefigma1 from "../assets/img/philorefigma1.png"
-import Philorefigma2 from "../assets/img/philorefigma2.png"
-import Philorefigma3 from "../assets/img/philorefigma3.png"
-import Philorefigma4 from "../assets/img/philorefigma4.png"
-import Philorefigma5 from "../assets/img/philorefigma5.png"
+import Philore1 from "../assets/img/PhiloreHome.png";
+import Philore2 from "../assets/img/PhiloreAbout.png";
+import Philore3 from "../assets/img/PhiloreMission.png";
+import Philore4 from "../assets/img/PhilorePlace.png";
+import Philore5 from "../assets/img/PhiloreContact.png";
+import Pathed1 from "../assets/img/pathed1.png";
+import Pathed2 from "../assets/img/pathed2.png";
+import Pathed3 from "../assets/img/pathed3.png";
+import Pathed4 from "../assets/img/pathed4.png";
+import Pathed5 from "../assets/img/pathed5.png";
+import Pathed6 from "../assets/img/pathed6.png";
+import Philorefigma1 from "../assets/img/philorefigma1.png";
+import Philorefigma2 from "../assets/img/philorefigma2.png";
+import Philorefigma3 from "../assets/img/philorefigma3.png";
+import Philorefigma4 from "../assets/img/philorefigma4.png";
+import Philorefigma5 from "../assets/img/philorefigma5.png";
 
 const Portfolio = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -54,16 +54,20 @@ const Portfolio = () => {
     },
     {
       title: "CREATING A LAYOUT FOR DATABASE DESIGN.",
-      description:
-        "Example layout for PHILORE pathed Website using figma",
+      description: "Example layout for PHILORE pathed Website using figma",
       images: [Pathed1, Pathed2, Pathed3, Pathed4, Pathed5, Pathed6],
       thumbnail: Pathed1,
     },
     {
       title: "CREATING A LAYOUT FOR ADMIN DESIGN.",
-      description:
-        "Example layout for PHILORE Website using figma",
-      images: [Philorefigma1, Philorefigma2, Philorefigma3, Philorefigma4, Philorefigma5],
+      description: "Example layout for PHILORE Website using figma",
+      images: [
+        Philorefigma1,
+        Philorefigma2,
+        Philorefigma3,
+        Philorefigma4,
+        Philorefigma5,
+      ],
       thumbnail: Philorefigma1,
     },
     // Add more projects as needed
@@ -89,7 +93,7 @@ const Portfolio = () => {
               key={index}
               src={imgSrc}
               alt=""
-              className="w-full h-[350px] object-cover"
+              className="w-full h-[320px] object-cover rounded-lg"
             />
           ))}
         </div>
@@ -121,12 +125,12 @@ const Portfolio = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-zinc-800 rounded-t-[3%] rounded-b-[3%] shadow-lg shadow-zinc-600 hover:shadow-zinc-500 pb-6 py-4 px-3 space-y-5 space-x-1 flex-1"
+            className="bg-zinc-800 rounded-t-[3%] rounded-b-[3%]  shadow-lg shadow-zinc-600 hover:shadow-zinc-500 pb-6 py-4 px-3 space-y-5 space-x-1 flex-1"
           >
             <img
               src={project.thumbnail}
               alt={project.title}
-              className="w-full h-[350px] object-cover"
+              className="w-full h-[230px] md:h-[240px] rounded-lg object-fit"
             />
             <p>{project.title} :</p>
             <p>{project.description}</p>
