@@ -34,7 +34,8 @@ const Portfolio = () => {
     {
       title: "E-learning Web Based Project",
       description:
-        "A E-learning Web Based Project for kids to learn how to read and visualize using React, Node.js, TailwindCSS, MongoDB for database. ",
+        "A E-learning Web Based Project for kids to learn how to read and visualize using React, Node.js, TailwindCSS, MongoDB for database.",
+      link: "Here's the link of the Website: https://e-learning-thesis-tupm.netlify.app/",
       images: [Home, Menu, Contact, Login, Register],
       thumbnail: Home, // Thumbnail image for the project card
     },
@@ -42,6 +43,7 @@ const Portfolio = () => {
       title: "PHILORE Resume App Form",
       description:
         "A resume app created to demonstrate my skills in form handling and PDF generation using React and Tailwind CSS.",
+      link: "Here's the link of the Website: https://philore-resume.vercel.app/",
       images: [Form, Details, Education, Skills, Resume],
       thumbnail: Form, // Thumbnail image for the project card
     },
@@ -134,6 +136,7 @@ const Portfolio = () => {
             />
             <p>{project.title} :</p>
             <p>{project.description}</p>
+            <p>{project.link}</p>
             <button
               className="px-2 py-2 rounded-3xl border border-transparent font-bold bg-red-600 text-white hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-red-800 focus:ring-offset-2 transition-all text-sm"
               onClick={() => handleViewMore(index)}

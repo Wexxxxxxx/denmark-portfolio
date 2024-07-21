@@ -1,8 +1,12 @@
 import React from "react";
 import img from "../assets/img/image11.png";
+import Lottie from "lottie-react";
+import animationData from "../assets/animation/Animation - 1721558916891.json";
+import { useRef } from "react";
 import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
+  const phoneRef = useRef(null);
   return (
     <div
       id="home"
@@ -27,11 +31,17 @@ const Home = () => {
           </div>
         </p>
       </div>
-      <img
-        src={img}
-        alt=""
-        className="shadow-lg shadow-gray-500 hover:shadow-gray-400 md:w-5/12 md:mt-32"
-      />
+      <div className="flex flex-col min-h-screen justify-center items-center">
+        <Lottie
+          onComplete={() => {
+            phoneRef.current?.goToAndPlay(45, true);
+          }}
+          lottieRef={phoneRef}
+          
+          animationData={animationData}
+          className="hidden sm:block w-[450px] md:w-[350px] lg:w-[750px]"
+        />
+      </div>
     </div>
   );
 };
