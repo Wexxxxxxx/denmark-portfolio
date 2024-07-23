@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import BootstrapImage from "../assets/img/bootsrap1.png";
 import Home from "../assets/img/ElearningHome.png";
 import Menu from "../assets/img/ElearningMenu.png";
@@ -26,6 +26,7 @@ import Philorefigma2 from "../assets/img/philorefigma2.png";
 import Philorefigma3 from "../assets/img/philorefigma3.png";
 import Philorefigma4 from "../assets/img/philorefigma4.png";
 import Philorefigma5 from "../assets/img/philorefigma5.png";
+import { MotionAnimate } from "react-motion-animate";
 
 const Portfolio = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -85,6 +86,7 @@ const Portfolio = () => {
 
   if (selectedProject !== null) {
     return (
+      
       <div className="flex flex-col items-center justify-center p-6 pt-12 bg-black-800">
         <div className="text-white text-2xl uppercase font-bold text-center leading-[4rem] md:text-5xl xl:text-7xl md:p-1 md:tracking-widest md:leading-4 xl:pt-12 md:pt-6 md:py-5">
           <p>{projects[selectedProject].title}</p>
@@ -110,6 +112,7 @@ const Portfolio = () => {
   }
 
   return (
+    <MotionAnimate>
     <div
       id="portfolio"
       className="flex flex-col md:flex-col items-center justify-center md:p-4 p-6 pt-12 bg-black-800"
@@ -147,6 +150,7 @@ const Portfolio = () => {
         ))}
       </div>
     </div>
+    </MotionAnimate>
   );
 };
 

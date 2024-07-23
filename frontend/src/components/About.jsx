@@ -14,9 +14,9 @@ import Pdf from "../assets/Denmark.pdf";
 import resume from "../assets/Resume.pdf";
 import Lottie from "lottie-react";
 import animationData from "../assets/logo/Animation - 1721556248329.json";
-import animationData2 from "../assets/logo/Animation - 1721557277814.json"
-import animationData3 from "../assets/logo/Animation - 1721564871927.json"
-
+import animationData2 from "../assets/logo/Animation - 1721557277814.json";
+import animationData3 from "../assets/logo/Animation - 1721564871927.json";
+import { MotionAnimate } from "react-motion-animate";
 import { Link } from "react-router-dom";
 
 const About = () => {
@@ -38,7 +38,10 @@ const About = () => {
     },
   ];
   const phoneRef = useRef(null);
+
+
   return (
+    <MotionAnimate>
     <div
       id="about"
       className="flex flex-col md:flex-col items-center justify-center md:p-4 p-6 pt-12 bg-neutral-900"
@@ -126,6 +129,7 @@ const About = () => {
         ))}
       </div>
     </div>
+    </MotionAnimate>
   );
 };
 
